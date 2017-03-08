@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+
+/* eslint-disable no-console */
 var {spawnSync} = require('child_process');
 var {readFileSync, writeFileSync} = require('fs');
 
@@ -11,6 +13,7 @@ const packages = [
   'babel-preset-es2015',
   'babel-preset-stage-0',
   'babel-loader',
+  'eslint',
   'css-loader',
   'style-loader',
   'html-loader',
@@ -55,8 +58,9 @@ try {
 const existingScripts = moduleConfig.scripts || {};
 
 const scripts = {
-  "build": "rm -rf public/*; NODE_ENV=production webpack --progress",
-  "start": "webpack-dev-server --progress"
+  'build': 'rm -rf public/*; NODE_ENV=production webpack --progress',
+  'lint': 'eslint --ignore-path .gitignore .',
+  'start': 'webpack-dev-server --progress'
 };
 
 const injectedModuleConfig = Object.assign({}, moduleConfig, {
