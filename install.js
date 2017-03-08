@@ -80,3 +80,11 @@ const {status} = spawnSync('yarn', ['add', '--dev'].concat(packages), {
 if (status !== 0) {
   exit();
 }
+
+console.log('🙅  Fixing `.gitignore`...');
+
+const ignoreList = readFileSync('./.gitignore', 'utf-8');
+const fixedList = ignoreList.substring(0, ignoreList.indexOf('#') - 1);
+writeFileSync('./.gitignore', fixedList);
+
+console.log('⛰  Done.');
