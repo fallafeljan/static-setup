@@ -8,9 +8,9 @@ SPA using [React](https://facebook.github.io/react/), built with
 
 For setup, perform the following steps:
 
-1. Get the files of this repo, preferably without the `.git` folder:
-  `git archive --format=tar --remote=<repository URL> HEAD | tar xf -`
+1. Get the files of this repo: `git archive --depth=1 <url> <name>`
 2. Perform installation: `./install.js`
+3. Remove unused files (`install.js`, `.git`)
 
 After setting up, the following commands are at your hands:
 
