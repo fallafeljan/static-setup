@@ -2,7 +2,9 @@
 
 This is a simple setup for building websites that emit static assets, i.e., a
 SPA using [React](https://facebook.github.io/react/), built with
-[Webpack](https://webpack.js.org/).
+[Webpack](https://webpack.js.org/). Several configurations are provided
+(`webpack.config.js`, `.babelrc`, …), and dependencies are added via
+`yarn add …` without a lockfile.
 
 For setup, perform the following steps:
 
