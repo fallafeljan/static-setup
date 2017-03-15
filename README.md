@@ -8,7 +8,7 @@ SPA using [React](https://facebook.github.io/react/), built with
 
 For setup, perform the following steps:
 
-1. Get the files of this repo: `git archive --depth=1 <url> <name>`
+1. Get the files of this repo: `git clone --depth=1 https://github.com/fallafeljan/static-setup.git`
 2. Perform installation: `./install.js`
 3. Remove unused files (`install.js`, `.git`)
 
