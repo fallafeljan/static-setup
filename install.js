@@ -60,7 +60,7 @@ const existingScripts = moduleConfig.scripts || {};
 const scripts = {
   'build': 'rm -rf public/*; NODE_ENV=production webpack --progress',
   'lint': 'eslint --ignore-path .gitignore .',
-  'start': 'webpack-dev-server --progress'
+  'dev': 'webpack-dev-server --progress'
 };
 
 const injectedModuleConfig = Object.assign({}, moduleConfig, {
