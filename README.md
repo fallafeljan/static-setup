@@ -14,5 +14,5 @@ For setup, perform the following steps:
 
 After setting up, the following commands are at your hands:
 
-* `yarn start` Spawn a local development server
+* `yarn run dev` Spawn a local development server
 * `yarn run build` Build all static assets into (see `public/`)
